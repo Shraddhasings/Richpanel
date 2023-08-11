@@ -25,7 +25,7 @@ const Success = () => {
   console.log(sessionId);
 
   const handlePaymentSuccess = () => {
-    fetch("https://richpanel-nine.vercel.app/api/v1/payment-success", {
+    fetch("/api/v1/payment-success", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
