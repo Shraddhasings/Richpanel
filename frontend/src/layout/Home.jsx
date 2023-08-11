@@ -62,7 +62,7 @@ const Home = () => {
   }, [userId]);
 
   const checkout = (plan) => {
-    fetch("http://localhost:5000/api/v1/create-subscription-checkout-session", {
+    fetch("https://richpanel-nine.vercel.app/api/v1/create-subscription-checkout-session", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
